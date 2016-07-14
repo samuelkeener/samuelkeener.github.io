@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  src: url("1132183/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  font-style: italic;
+  src: url("1132186/9bd640b2-9a56-4391-b213-767ae9c30ef4.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("1132159/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  src: url("1132162/b7eb3871-e910-4522-9982-effb425a2714.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  background-color: #F8F2E3;
+  font-family: 'Bungee', 'Georgia', sans-serif;
+}
+
+a,
+a:visited {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.container {
+  overflow: hidden;
+  width: 50%;
+  height: 33%;
+  float: left;
+}
+
+.big {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 33%;
+  text-align: center;
+}
+
+.big h1 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 144px;
+}
+
+.container:first-child,
+.container:nth-child(2) {
+  height: 34%;
+}
+
+.about {
+  font-size: 24px;
+  padding: 25px 50px;
+  border-top: 1px solid rgb(205, 205, 205);
+}
+
+.about p {
+  max-width: 768px;
+  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a.block {
+  transition: all 200ms ease-out;
+}
+
+a.block:hover {
+  transform: scale(1.1);
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+#avatar {
+  background-image: url('../img/BSK.png');
+  background-color: black;
+  background-size: 100%;
+}
+
+#info {
+  background-color: white;
+}
+
+#title .name {
+  color: black;
+  font-size: 144px !important;
+  padding: 0px;
+  font-family: "Bungee Shade";
+  width: 100%;
+}
+
+.text_container {
+  position: relative;
+  font-family: 'Bungee Shade';
+  top: 50%;
+  transform: translateY(0%);
+  padding: 40px;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  /*     max-width: 480px; */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Bungee Shade";
+  color: white;
+  padding-bottom: 20px;
+}
+
+.text {
+  padding: 0px 10px;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Bungee';
+}
+
+.tagline {
+  font-size: 30px;
+  font-family: 'Bungee', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+#eightgrade {
+  /*     background-image: url('../img/8thGrade.svg'); */
+  background-color: #002244;
+  background-size: 60%;
+}
+
+#ninthgrade {
+  /*     background-image: url('../img/9thGradeCS.svg'); */
+  background-color: #C60C30;
+  background-size: 60%;
+}
+
+#economics {
+  /*     background-image: url('../img/economics.svg'); */
+  background-color: #B0B7BC;
+  background-size: 60%;
+}
+
+#github {
+  background-image: url('../img/github.svg');
+  background-color: black;
+}
+
+#eleventhgrade {
+  /*     background-image: url('../img/11thGradeCS.svg'); */
+  background-color: #9F8958;
+  background-size: 60%;
+}
+
+#instapaper {
+  background-image: url('../img/instapaper.svg');
+  background-color: rgb(248, 242, 227);
+}
+
+#name {
+  background-color: rgb(248, 242, 227);
+  background-size: 60%;
+  height: 300px;
+  font-size: 72px;
+}
+
+#email {
+  background-image: url('../img/gmail.svg');
+  background-color: rgb(248, 242, 227);
+  background-size: 60%;
+  height: 300px;
+}
+
+#pd {
+  /*     background-image: url('../img/pd.svg'); */
+  background-color: rgb(248, 242, 227);
+  background-size: 60%;
+  height: 300px;
+}
+
+#pd .name {
+  color: black;
+  font-size: 48px;
+}
+
+#pd .tagline {
+  color: black;
+}
+
+#hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+  .name {
+    font-size: 48px;
+  }
+  .tagline {
+    font-size: 24px;
+  }
+  #pd .name {
+    font-size: 32px;
+  }
+  #title .name {
+    font-size: 128px !important;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .name {
+    font-size: 36px;
+  }
+  .tagline {
+    font-size: 14px;
+  }
+  .about {
+    font-size: 18px;
+    padding: 25px 25px;
+  }
+  #title .name {
+    font-size: 72px !important;
+  }
+}
